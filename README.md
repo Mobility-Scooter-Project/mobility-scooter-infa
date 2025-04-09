@@ -1,5 +1,17 @@
-# terraform-jetstream
+# Mobility Scooter Project Infra
+This repo stores all the infrastructure bootstraping configurations for the Mobility Scooter Project led by Dr. Tingten Chen at Cal Poly Pomona. The end goal of this is to provide self-service capabilities for any team within the Mobility Scooter Project.
 
-This is just an example of what terraform can do on Jetstream. This will create a network, create a vm based on which image you give it and add whichever public key you specify to the vm.
+Below is a brief list of technologies used by in this repo. For a more detailed overview, please see the [wiki](https://github.com/Mobility-Scooter-Project/mobility-scooter-infa/wiki).
 
-Please check the variables.tf file for more instructions.
+## Technologies
+- [Openstack](https://docs.openstack.org/2024.1/)
+- Terraform
+    - [Terraform Cloud Development Kit (CDKTF)](https://developer.hashicorp.com/terraform/cdktf)
+- [K3s](https://docs.k3s.io/)
+    - [Traefik](https://doc.traefik.io/traefik/providers/kubernetes-crd/)
+    - [cert-manager](https://cert-manager.io/)
+    - [Headlamp](https://headlamp.dev/)
+    - [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
+    - [Kargo](https://kargo.io/)
+
+**Note:** Scripts in this repo are intended to be run via _cdktf deploy only_
